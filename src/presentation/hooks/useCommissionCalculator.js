@@ -1,8 +1,7 @@
 import { useState, useCallback } from 'react';
-// Importamos el servicio de aplicación
 import { CommissionService } from '../../application/CommissionService';
 
-// Creamos una única instancia del servicio
+
 const commissionService = new CommissionService();
 
 export function useCommissionCalculator() {

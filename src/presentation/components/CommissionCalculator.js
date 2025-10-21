@@ -1,10 +1,10 @@
 import React from 'react';
 import { useCommissionCalculator } from '../hooks/useCommissionCalculator';
 import { CommissionResults } from './CommissionResults';
-// (Aquí podrías importar un CSS específico para este componente, ej: './CommissionCalculator.css')
+
 
 export function CommissionCalculator() {
-  // 1. Usa el Hook para obtener el estado y las funciones
+
   const {
     startDate,
     setStartDate,
@@ -16,7 +16,7 @@ export function CommissionCalculator() {
     calculate,
   } = useCommissionCalculator();
 
-  // 2. Renderiza la UI
+
   return (
     <div className="app-container">
       <h1>Calcular Comisión de Ventas</h1>

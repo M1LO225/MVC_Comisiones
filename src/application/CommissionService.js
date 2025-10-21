@@ -1,7 +1,4 @@
-// 1. Importa los "Casos de Uso" (la lógica)
 import { CalculateCommissionsUseCase } from '../domain/useCases/CalculateCommissionsUseCase';
-
-// 2. Importa las implementaciones concretas (los repositorios)
 import { VendorRepository } from '../infrastructure/repositories/VendorRepository';
 import { SaleRepository } from '../infrastructure/repositories/SaleRepository';
 import { RuleRepository } from '../infrastructure/repositories/RuleRepository';
@@ -16,10 +13,10 @@ export class CommissionService {
   }
 
   /**
-   * Orquesta el proceso completo de cálculo de comisiones.
+   * 
    * @param {string} startDate 
    * @param {string} endDate 
-   * @returns {Promise<Array>} El reporte de comisiones
+   * @returns {Promise<Array>} 
    */
   async getCommissionReport(startDate, endDate) {
     try {
